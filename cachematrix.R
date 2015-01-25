@@ -1,7 +1,7 @@
-## Put comments here that give an overall description of what your
-## functions do
+## These functions take the mean of a matrix and cache the information for future use.
 
-## Write a short comment describing this function
+## This function caches variables in relation to calculateing the mean
+##from a matrix in a private environment for future use.
 
 makeCacheMatrix <- function(x = matrix()) {
     m <- NULL
@@ -18,7 +18,8 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## This function detects whether cached data is available and then calculates the
+## mean on it.
 
 cacheSolve <- function(x, ...) {
     m <- x$getmean()
